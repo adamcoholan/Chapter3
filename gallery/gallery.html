@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/transparent_logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./gallery.css">
+    <script type="text/javascript" src="../scripts/loader.js"></script>
+    <script type="text/javascript" src="../scripts/click-delay.js"></script>
+    <title>Chapter 3 - Southwestern Ontario</title>
+</head>
+    <body id="libre-franklin">
+    <div>
+     <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container-fluid">
+          <img src="../images/transparent_logo.png" alt="Logo" width="300" height="70" class="d-inline-block align-text-top" style="margin-left: 15px;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 list-head">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../events/events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Photo Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../about/leadership.html">Leadership</a></li>
+                  <li><a class="dropdown-item" href="../about/airfield.html">Airfield</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../membership/membership.html">Membership</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <!-- Main Album Grid -->
+  <div class="album-grid">
+
+    <!-- ALBUM 1 -->
+    <div class="album-card">
+      <img src="../images/formation.jpg" alt="Nature Cover" class="album-cover">
+      <div class="album-info">
+        <h3>Nature</h3>
+        <a href="#album1" class="open-btn">View Album</a>
+      </div>
+    </div>
+
+    <!-- ALBUM 2 -->
+    <div class="album-card">
+      <img src="../images/formation.jpg" alt="Architecture Cover" class="album-cover">
+      <div class="album-info">
+        <h3>Architecture</h3>
+        <a href="#album2" class="open-btn">View Album</a>
+      </div>
+    </div>
+
+    <!-- ALBUM 3 -->
+    <div class="album-card">
+      <img src="../images/formation.jpg" alt="Travel Cover" class="album-cover">
+      <div class="album-info">
+        <h3>Travel</h3>
+        <a href="#album3" class="open-btn">View Album</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Album 1 Viewer -->
+  <div id="album1" class="album-viewer">
+    <a href="#" class="close-btn">&times;</a>
+    
+    <div class="slide">
+      <img src="../images/formation.jpg" alt="Nature 1">
+      <div class="scroll-hint">1 / 3 →</div>
+    </div>
+    <div class="slide">
+      <img src="../images/formation.jpg" alt="Nature 2">
+      <div class="scroll-hint">← 2 / 3 →</div>
+    </div>
+    <div class="slide">
+      <img src="../images/formation.jpg" alt="Nature 3">
+      <div class="scroll-hint">← 3 / 3</div>
+    </div>
+  </div>
+
+  <!-- Album 2 Viewer -->
+  <div id="album2" class="album-viewer">
+    <a href="#" class="close-btn">&times;</a>
+    
+    <div class="slide">
+      <img src="https://picsum.photos" alt="Arch 1">
+      <div class="scroll-hint">1 / 3 →</div>
+    </div>
+    <div class="slide">
+      <img src="https://picsum.photos" alt="Arch 2">
+      <div class="scroll-hint">← 2 / 3 →</div>
+    </div>
+    <div class="slide">
+      <img src="https://picsum.photos" alt="Arch 3">
+      <div class="scroll-hint">← 3 / 3</div>
+    </div>
+  </div>
+
+  <!-- Album 3 Viewer -->
+  <div id="album3" class="album-viewer">
+    <a href="#" class="close-btn">&times;</a>
+    
+    <div class="slide">
+      <img src="https://picsum.photos" alt="Travel 1">
+      <div class="scroll-hint">1 / 3 →</div>
+    </div>
+    <div class="slide">
+      <img src="https://picsum.photos" alt="Travel 2">
+      <div class="scroll-hint">← 2 / 3 →</div>
+    </div>
+    <div class="slide">
+      <img src="https://picsum.photos" alt="Travel 3">
+      <div class="scroll-hint">← 3 / 3</div>
+    </div>
+  </div>
+
+      <footer class="footer-styling shadow-top">
+        <div class="footer-text">Contact Us</div>
+        <a href="mailto:coholan.adam1@gmail.com" style="text-decoration: none; color: black;">
+          <svg xmlns="http://www.w3.org/2000/svg" style="margin:3px" width="24" height="24" fill="currentColor" class="bi bi-envelope email" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+          </svg>
+        </a>
+        coholan.adam1@gmail.com
+        <br>
+        <a href="tel:+19053211463" style="text-decoration: none; color: black;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+          </svg>
+        </a>
+        +1 (905) 321-1463
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

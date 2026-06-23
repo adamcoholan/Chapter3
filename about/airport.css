@@ -1,0 +1,161 @@
+/* * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    } */
+    body {
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    
+    /* Header Section */
+    .contact-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .contact-header h1 {
+      font-size: 2.5rem;
+      color: #111;
+      margin-bottom: 10px;
+    }
+    .contact-header p {
+      color: #666;
+      font-size: 1.1rem;
+    }
+
+    /* Main Grid Layout */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    /* Info Cards Column */
+    .info-column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: #0056b3;
+    }
+    .card p, .card ul {
+      color: #444;
+      font-size: 0.95rem;
+    }
+    .card ul {
+      list-style: none;
+    }
+    .card li {
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .card li span:first-child {
+      font-weight: 600;
+      color: #666;
+    }
+
+    /* Form Column */
+    .form-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .form-card h2 {
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+    .form-group input, 
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1px;
+      font-family: inherit;
+      background: #fdfdfd;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus, 
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #0056b3;
+    }
+    .submit-btn {
+      width: 100%;
+      background: #0056b3;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .submit-btn:hover {
+      background: #004085;
+    }
+
+    /* Map Section Styles */
+    .map-container {
+      background: #fff;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .map-container h2 {
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      padding-left: 10px;
+    }
+    .map-wrapper {
+      position: relative;
+      padding-bottom: 450px; /* Forces standard ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    .map-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Responsive Breakdown */
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      body {
+        padding: 20px 10px;
+      }
+    }

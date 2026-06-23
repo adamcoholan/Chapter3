@@ -1,0 +1,222 @@
+/* Color Palette */
+/* Black: #141414 */
+/* Red: #FC0101 */
+
+/* General Styles */
+
+body {
+    background: #f8f9fa;
+    height: 10vh;
+    color: #000000;
+
+}
+
+/* Loader Styles */
+
+#loader {
+    margin: -50px 0 0 -130px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+}
+
+#content-wrapper {
+    display: none;
+}
+
+/* Navbar Customizations */
+
+.navbar-nav > li{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navbar-collapse {
+    text-align: center !important;
+    width: 100%;
+    margin-right: 1%;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-dark .navbar-toggler {
+    color: transparent;
+}
+
+.navbar-toggler-icon {
+    fill: #FFFFFF;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 100%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.navbar-title-name {
+    width: 80%;
+    color: #111111;
+}
+
+.active {
+    font-weight: 550 !important;
+}
+
+.dropdown-menu {
+    min-width: 0rem;
+    text-align: center;
+}
+
+.dropdown-item:focus {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.dropdown-item.active {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.nav-item.dropdown-toggle.active {
+    color: #000000;
+}
+
+/* Index Specfic Styles */
+
+.card {
+    border: none;
+    border-radius: 0;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-top: 15px;
+}
+
+.bi-calendar2-week {
+    color: #FFFFFF;
+    transition: font-size 0.2s ease;
+    font-size: 110px;
+}
+
+.bi-calendar2-week:hover {
+    font-size: 115px;
+}
+
+.bi-camera {
+    color: #FFFFFF;
+    transition: font-size 0.2s ease;
+    font-size: 110px;
+}
+
+.bi-camera:hover {
+    font-size: 115px;
+}
+
+.bi-people {
+    color: #FFFFFF;
+    transition: font-size 0.2s ease;
+    font-size: 110px;
+}
+
+.bi-people:hover {
+    font-size: 115px;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7rem;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    /* width: 100%; */
+}
+
+.card-wrapper {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -2%;
+    background-color: #FC0101;
+    height: 35vh;
+    border-radius: 20px;
+    color: #FFFFFF;
+    display: inline-block;
+    position: absolute;
+}
+
+.column {
+    width: 33.3%;
+}
+
+.intro-card {
+    padding-top: 0rem;
+    width: 100%;
+    height: 0.2rem;
+    /* margin-left: 10%; */
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.sliding-image {
+    width: 100%;
+    height: 120vh;
+    animation: slideInFromRight 0.9s ease-out forwards; 
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(5%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;   
+    }
+}
+
+/* Footer Styles */
+
+
+.footer-styling {
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: center;
+    margin-top: 12rem;
+    padding-bottom: 2rem;
+    padding-top: 0.2rem;
+    bottom: 0;
+    width: 100%;
+    float: inline-end;
+}
+
+.shadow-top {
+  box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.footer-text {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.email:hover path {
+    d: path("M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882zM15 7.383l-4.778 2.867L15 13.117zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765z");
+}
+
