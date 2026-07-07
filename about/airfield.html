@@ -7,15 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="./airfield.css">
-    <script type="text/javascript" src="../scripts/loader.js"></script>
-    <script type="text/javascript" src="../scripts/click-delay.js"></script>
     <title>Chapter 3 - Southwestern Ontario</title>
   </head>
   <body id="libre-franklin">
     <div>
      <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
         <div class="container-fluid">
-          <img src="../images/transparent_logo.png" alt="Logo" width="300" height="70" class="d-inline-block align-text-top" style="margin-left: 15px;">
+          <img src="../images/transparent_logo.png" alt="Logo" width="250" height="70" class="d-inline-block align-text-top" style="margin-left: 15px;">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -47,60 +45,52 @@
         </div>
       </nav>
 
-  <div class="container">
-
-    <!-- Main Content Layout Split -->
-    <div class="contact-grid">
-      
-      <!-- Left Column: Business Details -->
-      <div class="info-column">
-        
-        <!-- Contact Methods Card -->
-        <div class="card">
-          <h2>Airfield Information</h2>
-          <p><strong>Frequency:</strong> 122.8 MHz (Unicom)</p>
-          <p><strong>Elevation:</strong> 1040 feet</p>
-          <p><strong>Circuit Height:</strong> 2100 feet</p>
-          <p><strong>Runways:</strong> 06/24</p>
-          <p><strong>Runway Length:</strong> 3040 feet</p>
-        </div>
-
-        <!-- Physical Location Card -->
-        <div class="card">
-          <h2>Location</h2>
-          <p><strong>Norm Beckham/Bob Hewitt Field (CPR5)</strong></p>
-          <p>684442 Road 68</p>
-          <p>Beachville, ON N4S 7V7</p>
-          <p>Canada</p>
-        </div>
-
-        <!-- Hours of Operation Card -->
-        <div class="card">
-          <h2>Get In Touch</h2>
-          <p style="margin-bottom: 12px;"><strong>Phone:</strong> (519) 536-6338</p>
-          <p style="margin-bottom: 12px;"><strong>Email:</strong> REPLACE WITH EMAIL</p>
-        </div>
-
+      <div class="text-wrapper">
+        <span class="dotted-title">
+          <span class="dot"></span>Chapter 3: Southwestern Ontario<span class="dot"></span>
+        </span>
+        <h2 class="title">Airfield Information</h2>
+        <span class="line"></span>
       </div>
 
-      <!-- Right Column: Contact Inquiry Form -->
-      <div class="form-card">
-        <iframe src="https://imageserver.fltplan.com/afd/Canada/14MAY2026/CPR5-1981.PDF" width="640" height="650" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <div class="container">
+        <div class="info-grid">
+          <div class="info-column">
+            <div class="info-card">
+              <h2 class="card-title">AERODROME</h2>
+              <p><strong>Frequency:</strong> 122.8 MHz (Unicom)</p>
+              <p><strong>Elevation:</strong> 1040 feet</p>
+              <p><strong>Circuit Height:</strong> 2100 feet</p>
+              <p><strong>Runways:</strong> 06/24</p>
+              <p><strong>Runway Length:</strong> 3040 feet</p>
+            </div>
+            <div class="info-card">
+              <h2 class="card-title">LOCATION</h2>
+              <p><strong>Norm Beckham/Bob Hewitt Field (CPR5)</strong></p>
+              <p>684442 Road 68</p>
+              <p>Beachville, ON N4S 7V7</p>
+              <p>Canada</p>
+            </div>
+            <div class="info-card">
+              <h2 class="card-title">GET IN TOUCH</h2>
+              <p style="margin-bottom: 12px;"><strong>Phone:</strong> (519) 536-6338</p>
+              <p style="margin-bottom: 12px;"><strong>Email:</strong> REPLACE WITH EMAIL</p>
+            </div>
+          </div>
+          <div class="cfs-insert">
+            <iframe src="https://imageserver.fltplan.com/afd/Canada/14MAY2026/CPR5-1981.PDF" width="640" height="650" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <div class="disclaimer"><span style="font-weight: 700;">*Note:</span> CFS insert may be out of date. Refer to up to date CFS version for flight planning.</div>
+          </div>
+        </div>
+        <div class="map-container">
+          <h2>FIND US ON THE MAP</h2>
+          <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12735.864033046244!2d-80.83052522878853!3d43.10822764698434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882e9ffa129d208d%3A0x6eed64ba5141801e!2sWoodstock%20Ontario%20Flying%20Club!5e1!3m2!1sen!2sca!4v1782175706724!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
       </div>
 
-    </div>
-
-    <!-- Bottom Row: Interactive Google Map -->
-    <div class="map-container">
-      <h2>Find Us on the Map</h2>
-      <div class="map-wrapper">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12735.864033046244!2d-80.83052522878853!3d43.10822764698434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882e9ffa129d208d%3A0x6eed64ba5141801e!2sWoodstock%20Ontario%20Flying%20Club!5e1!3m2!1sen!2sca!4v1782175706724!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-
-  </div>
-
-        <footer class="footer-styling shadow-top" style="margin-top: 2%;">
+      <footer class="footer-styling shadow-top" style="margin-top: 2%;">
         <div class="footer-text">Contact Us</div>
         <a href="mailto:coholan.adam1@gmail.com" style="text-decoration: none; color: black;">
           <svg xmlns="http://www.w3.org/2000/svg" style="margin:3px" width="24" height="24" fill="currentColor" class="bi bi-envelope email" viewBox="0 0 16 16">
