@@ -2,7 +2,6 @@
 /* Black: #141414 */
 /* Red: #FC0101 */
 
-/* General Styles */
 body {
     background: #f8f9fa;
     min-height: 100vh;
@@ -17,7 +16,7 @@ body {
 }
 
 /* Navbar Customizations */
-.navbar-nav > li {
+.navbar-nav>li {
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -58,7 +57,7 @@ body {
 .dropdown-menu {
     min-width: 0rem;
     text-align: center;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-item {
@@ -87,31 +86,32 @@ body {
         transform: translateX(5%);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
-        opacity: 1;   
+        opacity: 1;
     }
 }
 
 .slider-container {
-    position: relative; 
+    position: relative;
     width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 86px; 
+    margin-top: 86px;
 }
 
 .sliding-image {
     width: 100%;
-    height: auto; 
-    animation: slideInFromRight 0.9s ease-out forwards; 
+    height: auto;
+    animation: slideInFromRight 0.9s ease-out forwards;
 }
 
 .sliding-image img {
     width: 100%;
-    height: auto; 
+    height: auto;
     display: block;
 }
 
@@ -122,29 +122,31 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-    font-size: clamp(1.5rem, 5vw, 4.5rem); 
+    font-size: clamp(1.5rem, 5vw, 4.5rem);
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
     width: 90%;
     text-align: center;
-    font-weight: 800; 
+    font-weight: 800;
     letter-spacing: 3px;
 }
 
 /* Content Grid Wrapper Layout */
 .card-wrapper {
     max-width: 1200px;
-    margin: -2rem auto 4rem auto; /* Moved up slightly to -2rem to crisp up the banner overlay */
+    margin: -2rem auto 4rem auto;
+    /* Moved up slightly to -2rem to crisp up the banner overlay */
     padding: 0 1.5rem;
-    position: relative;          
-    z-index: 2;                  
+    position: relative;
+    z-index: 2;
 }
 
 /* Forces either a pure 3-column desktop layout or instantly snaps to a stacked column structure */
 .card-wrapper .row {
     display: grid !important;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    padding: 0 1rem; /* Enforces safe margins inside container boundaries to stop overflow */
+    padding: 0 1rem;
+    /* Enforces safe margins inside container boundaries to stop overflow */
 }
 
 /* Clear standard Bootstrap padding rules that conflict with custom Grid layouts */
@@ -164,19 +166,19 @@ body {
 /* Red Color Theme Box Configurations */
 .card {
     border: none;
-    background-color: #FC0101 !important; 
+    background-color: #FC0101 !important;
     border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .card:hover {
-    transform: translateY(-6px); 
-    box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
 }
 
 .card-body {
@@ -187,50 +189,58 @@ body {
     padding: 1.5rem;
 }
 
-.card-title, 
-.card-body h3, 
-.card-body h6 {
-    color: #ffffff !important; 
+.card-title {
+    text-align: center;
+    color: #ffffff !important;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 1.5px
+}
+
+.card-subtext {
+    text-align: center;
+    color: #ffffff !important;
 }
 
 /* Custom Increased Icon Sizing Bounds */
 .icon-container {
     text-align: center;
-    font-size: 5.25rem; 
-    color: #ffffff !important; 
+    font-size: 5.25rem;
+    color: #ffffff !important;
     /* margin-top: auto;  */
 }
 
 .history-wrapper {
     text-align: center;
-    
+
 }
 
 
-  .useful-link-ribbon:hover {
+.useful-link-ribbon:hover {
     background-color: #ffffff !important;
     border-left-color: #FC0101 !important;
     transform: translateX(4px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  }
-  .useful-link-ribbon:hover .ribbon-arrow {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.useful-link-ribbon:hover .ribbon-arrow {
     color: #FC0101 !important;
     transform: translateX(4px);
-  }
+}
 
 /* Complete Redesign: Forces Free HTML Floating Text Inline with Icons */
 .footer-styling {
     background-color: #FFFFFF;
-    color: #4a4a4a; 
+    color: #4a4a4a;
     text-align: center;
-    margin-top: auto; 
+    margin-top: auto;
     padding: 2.5rem 1.5rem;
     border-top: 1px solid rgba(0, 0, 0, 0.06);
     width: 100%;
 }
 
 .shadow-top {
-  box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 .footer-text {
@@ -239,7 +249,7 @@ body {
     letter-spacing: 1.5px;
     font-weight: 700;
     color: #141414;
-    margin-bottom: 1.25rem; 
+    margin-bottom: 1.25rem;
     width: 100%;
 }
 
@@ -258,15 +268,15 @@ body {
 
 /* Formats the inline anchor elements individually */
 .footer-styling a {
-    margin-right: 0.35rem; 
-    margin-left: 2rem; 
+    margin-right: 0.35rem;
+    margin-left: 2rem;
     color: #4a4a4a !important;
     text-decoration: none !important;
     transition: color 0.2s ease;
 }
 
 .footer-styling a:hover {
-    color: #FC0101 !important; 
+    color: #FC0101 !important;
 }
 
 /* First element adjustments to avoid unneeded trailing margin offsets */
@@ -275,7 +285,7 @@ body {
 }
 
 .footer-styling a svg {
-    margin: 0 0.5rem 0 0 !important; 
+    margin: 0 0.5rem 0 0 !important;
     transition: transform 0.2s ease, fill 0.2s ease;
     fill: #4a4a4a;
 }
@@ -291,20 +301,24 @@ body {
     .navbar img {
         width: 220px !important;
     }
+
     /* Snaps directly to single file layout stack whenever horizontal screen space shrinks */
     .card-wrapper .row {
         grid-template-columns: 1fr !important;
         gap: 1.25rem;
     }
+
     .card-wrapper {
-        margin-top: -1rem; /* Keeps overlap looking consistent on smaller vertical viewports */
+        margin-top: -1rem;
+        /* Keeps overlap looking consistent on smaller vertical viewports */
     }
+
     .icon-container {
-    text-align: center;
-    font-size: 4.75rem; 
-    color: #ffffff !important; 
-    /* margin-top: auto;  */
-}
+        text-align: center;
+        font-size: 4.75rem;
+        color: #ffffff !important;
+        /* margin-top: auto;  */
+    }
 }
 
 /* Desktop Breakpoint Alignment Shift (Prevents uneven 2-on-1 rows completely) */
@@ -312,34 +326,41 @@ body {
     .navbar img {
         width: 220px !important;
     }
+
     /* Snaps directly to single file layout stack whenever horizontal screen space shrinks */
     .card-wrapper .row {
         grid-template-columns: 1fr !important;
         gap: 1.25rem;
     }
+
     .card-wrapper {
-        margin-top: -1rem; /* Keeps overlap looking consistent on smaller vertical viewports */
+        margin-top: -1rem;
+        /* Keeps overlap looking consistent on smaller vertical viewports */
     }
+
     .icon-container {
-    text-align: center;
-    font-size: 4.25rem; 
-    color: #ffffff !important; 
-    /* margin-top: auto;  */
-}
+        text-align: center;
+        font-size: 4.25rem;
+        color: #ffffff !important;
+        /* margin-top: auto;  */
+    }
 }
 
 /* Responsive breakdowns for tiny viewport screens */
 @media (max-width: 575px) {
+
     /* Reconfigures contact items to stack vertically on small smartphone screens */
     .footer-styling {
-        display: block; 
+        display: block;
     }
+
     .footer-styling a {
         display: flex !important;
         justify-content: center;
         margin: 0.75rem auto 0.25rem auto !important;
     }
+
     .footer-styling br {
-        display: block; 
+        display: block;
     }
 }

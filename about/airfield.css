@@ -20,7 +20,7 @@ body {
   font-weight: 800;
   font-size: 0.9rem;
   letter-spacing: 2px;
-  text-transform:uppercase;
+  text-transform: uppercase;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -58,7 +58,7 @@ body {
 }
 
 .card-title {
-  font-weight:800;
+  font-weight: 800;
   letter-spacing: 1.5px;
   color: #FC0101 !important;
   font-size: 1.3rem;
@@ -82,14 +82,14 @@ body {
   background: #fff;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .cfs-insert {
   background: #fff;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .disclaimer {
@@ -101,7 +101,7 @@ body {
   background: #fff;
   padding: 15px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .map-container h2 {
@@ -114,7 +114,8 @@ body {
 
 .map-wrapper {
   position: relative;
-  padding-bottom: 450px; /* Forces standard ratio */
+  padding-bottom: 450px;
+  /* Forces standard ratio */
   height: 0;
   overflow: hidden;
   border-radius: 8px;
@@ -134,6 +135,7 @@ body {
   .contact-grid {
     grid-template-columns: 1fr;
   }
+
   body {
     padding: 20px 10px;
   }
