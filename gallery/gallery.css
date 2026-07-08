@@ -1,7 +1,7 @@
 .text-wrapper {
   width: 80%;
   margin-left: 10%;
-  margin-top: 2.6rem;
+  margin-top: 8rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -58,23 +58,22 @@ h1 {
   font-weight: 400;
 }
 
-/* Album Grid Layout */
 .album-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  margin-top: 3rem;
 }
 
-/* Album Card */
 .album-card {
   background: #FFF;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease;
+  max-width: 90%;
+  margin-left: 5%;
 }
 
 .album-card:hover {
@@ -110,7 +109,6 @@ h1 {
   background: #555;
 }
 
-/* Full-Screen Modal Viewer */
 .album-viewer {
   position: fixed;
   top: 0;
@@ -120,25 +118,21 @@ h1 {
   background: rgba(0, 0, 0, 0.95);
   z-index: 1000;
 
-  /* Hidden by default */
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
 
-  /* Scroll Container Setup */
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
 
-/* Open Modal via CSS :target */
 .album-viewer:target {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* Individual Full-Screen Slide */
 .slide {
   min-width: 100vw;
   height: 80vh;
@@ -156,7 +150,6 @@ h1 {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Close Button */
 .close-btn {
   position: fixed;
   top: 20px;
@@ -179,7 +172,6 @@ h1 {
   background: rgba(255, 255, 255, 0.4);
 }
 
-/* Simple Slide Counter Hint */
 .scroll-hint {
   position: absolute;
   bottom: 50px;
