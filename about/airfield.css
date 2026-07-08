@@ -1,54 +1,54 @@
 body {
-  background: #f8f9fa;
-  color: #333;
-  line-height: 1.6;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
 }
 
 .text-wrapper {
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 8rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .dotted-title {
-  color: #FC0101;
-  font-weight: 800;
-  font-size: 0.9rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+    color: #FC0101;
+    font-weight: 800;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
 }
 
 .dot {
-  width: 6px;
-  height: 6px;
-  background-color: #FC0101;
-  border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: #FC0101;
+    border-radius: 50%;
 }
 
 .title {
-  color: #141414;
-  font-weight: 900;
-  font-size: clamp(2.25rem, 6vw, 3.25rem);
-  letter-spacing: -0.5px;
-  margin: 0 0 1.5rem 0;
-  text-transform: uppercase;
-  line-height: 1.1;
+    color: #141414;
+    font-weight: 900;
+    font-size: clamp(2.25rem, 6vw, 3.25rem);
+    letter-spacing: -0.5px;
+    margin: 0 0 1.5rem 0;
+    text-transform: uppercase;
+    line-height: 1.1;
 }
 
 .line {
-  width: 80px;
-  height: 4px;
-  background-color: #FC0101;
-  border-radius: 2px;
+    width: 80px;
+    height: 4px;
+    background-color: #FC0101;
+    border-radius: 2px;
 }
 
 .container {
@@ -88,11 +88,11 @@ body {
 
 .info-card {
     background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-left: 5px solid #FC0101;
     border-radius: 12px;
     padding: 1.5rem 1.5rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
     text-align: left;
 }
 
@@ -102,7 +102,7 @@ body {
     letter-spacing: 1px;
     color: #141414 !important;
     margin-bottom: 1.25rem;
-    border-bottom: 1px solid rgba(0,0,0,0.04);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
     padding-bottom: 0.5rem;
 }
 
@@ -118,10 +118,10 @@ body {
 
 .cfs-insert {
     background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 12px;
     padding: 1.5rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -161,8 +161,8 @@ body {
     width: 100%;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .map-wrapper iframe {
@@ -187,7 +187,7 @@ body {
     .container {
         padding: 0 1rem;
     }
-    
+
     .cfs-insert {
         padding: 1rem;
         position: relative;
@@ -198,7 +198,7 @@ body {
         height: 480px;
         width: 100% !important;
         overflow: scroll !important;
-        -webkit-overflow-scrolling: touch !important; 
+        -webkit-overflow-scrolling: touch !important;
     }
 
     .map-wrapper iframe {

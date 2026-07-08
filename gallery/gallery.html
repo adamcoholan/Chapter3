@@ -59,91 +59,112 @@
       <span class="line"></span>
     </div>
 
-    <!-- Main Album Grid -->
-    <div class="album-grid">
+    <!-- Content Grid Wrapper Layout -->
+    <div class="card-wrapper" style="margin-top: 0rem; margin-bottom: 4rem;">
+      <div class="row"
+        style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important; gap: 2rem; padding: 0 1rem;">
 
-      <!-- ALBUM 1 -->
-      <div class="album-card">
-        <img src="../images/formation.jpg" alt="Nature Cover" class="album-cover">
-        <div class="album-info">
-          <h3>Nature</h3>
-          <a href="#album1" class="open-btn">View</a>
+        <!-- Redesigned Fully Clickable Album Card Target Wrapper Box -->
+        <div class="album-card layout-clickable-tile" onclick="openAlbumViewer(event, 'album1')">
+          <div class="album-cover-frame">
+            <img src="../images/formation.jpg" alt="Nature Album Cover" class="album-cover">
+          </div>
+          <div class="album-info-block">
+            <div>
+              <h3>Nature Collection</h3>
+              <p>Recent landscape and flight tracking imagery records.</p>
+            </div>
+            <div class="open-btn-fallback">
+              <span>View Album</span>
+              <i class="bi bi-arrow-right-short"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Re-architected Interactive Carousel Slider Modal with Scroll Arrows -->
+    <div id="album1" class="album-viewer-modal" data-current-slide="0">
+      <div class="modal-backdrop-shield" onclick="closeAlbumViewer('album1')"></div>
+
+      <div class="carousel-container-box">
+        <!-- Clean Structural Escape Toggle Icon Element -->
+        <a href="#" class="close-modal-x" onclick="closeAlbumViewer('album1')">&times;</a>
+
+        <!-- Core Interactive Stage: Houses Arrows and Image Train Carousel Frame -->
+        <div class="carousel-stage-row">
+
+          <!-- Left Navigation Arrow Button Trigger (Bootstrap Vector Icon) -->
+          <!-- Left Arrow -->
+          <button class="stage-nav-arrow arrow-left-trigger" onclick="shiftSlide('album1', -1)"
+            aria-label="Previous photo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+              <path fill-rule="evenodd"
+                d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+            </svg>
+          </button>
+
+          <!-- Right Arrow -->
+
+
+          <!-- Slider Frame Train Tracking Viewport Wrapper -->
+          <div class="carousel-viewport-window">
+            <div class="carousel-slide-train" id="train-album1">
+
+              <!-- Slide Node Item 1 -->
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/formation.jpg" alt="Nature Image 1">
+                </div>
+                <div class="scroll-hint-badge">1 / 3</div>
+              </div>
+
+              <!-- Slide Node Item 2 -->
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/formation.jpg" alt="Nature Image 2">
+                </div>
+                <div class="scroll-hint-badge">2 / 3</div>
+              </div>
+
+              <!-- Slide Node Item 3 -->
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/formation.jpg" alt="Nature Image 3">
+                </div>
+                <div class="scroll-hint-badge">3 / 3</div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Navigation Arrow Button Trigger (Bootstrap Vector Icon) -->
+          <button class="stage-nav-arrow arrow-right-trigger" style="text-align: center;"
+            onclick="shiftSlide('album1', 1)" aria-label="Next photo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708" />
+              <path fill-rule="evenodd"
+                d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708" />
+            </svg>
+          </button>
+
+        </div>
+
+        <!-- Floating Circle Nav Bullet Indicators -->
+        <div class="carousel-pagination-dots">
+          <button class="dot-indicator active-dot" onclick="jumpToSlide('album1', 0)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 1)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 2)"></button>
         </div>
       </div>
-
-      <!-- ALBUM 2 -->
-      <div class="album-card">
-        <img src="../images/formation.jpg" alt="Architecture Cover" class="album-cover">
-        <div class="album-info">
-          <h3>Architecture</h3>
-          <a href="#album2" class="open-btn">View</a>
-        </div>
-      </div>
-
-      <!-- ALBUM 3 -->
-      <div class="album-card">
-        <img src="../images/formation.jpg" alt="Travel Cover" class="album-cover">
-        <div class="album-info">
-          <h3>Travel</h3>
-          <a href="#album3" class="open-btn">View</a>
-        </div>
-      </div>
-
     </div>
 
-    <!-- Album 1 Viewer -->
-    <div id="album1" class="album-viewer">
-      <a href="#" class="close-btn">&times;</a>
-
-      <div class="slide">
-        <img src="../images/formation.jpg" alt="Nature 1">
-        <div class="scroll-hint">1 / 3 →</div>
-      </div>
-      <div class="slide">
-        <img src="../images/formation.jpg" alt="Nature 2">
-        <div class="scroll-hint">← 2 / 3 →</div>
-      </div>
-      <div class="slide">
-        <img src="../images/formation.jpg" alt="Nature 3">
-        <div class="scroll-hint">← 3 / 3</div>
-      </div>
-    </div>
-
-    <!-- Album 2 Viewer -->
-    <div id="album2" class="album-viewer">
-      <a href="#" class="close-btn">&times;</a>
-
-      <div class="slide">
-        <img src="https://picsum.photos" alt="Arch 1">
-        <div class="scroll-hint">1 / 3 →</div>
-      </div>
-      <div class="slide">
-        <img src="https://picsum.photos" alt="Arch 2">
-        <div class="scroll-hint">← 2 / 3 →</div>
-      </div>
-      <div class="slide">
-        <img src="https://picsum.photos" alt="Arch 3">
-        <div class="scroll-hint">← 3 / 3</div>
-      </div>
-    </div>
-
-    <!-- Album 3 Viewer -->
-    <div id="album3" class="album-viewer">
-      <a href="#" class="close-btn">&times;</a>
-
-      <div class="slide">
-        <img src="https://picsum.photos" alt="Travel 1">
-        <div class="scroll-hint">1 / 3 →</div>
-      </div>
-      <div class="slide">
-        <img src="https://picsum.photos" alt="Travel 2">
-        <div class="scroll-hint">← 2 / 3 →</div>
-      </div>
-      <div class="slide">
-        <img src="https://picsum.photos" alt="Travel 3">
-        <div class="scroll-hint">← 3 / 3</div>
-      </div>
-    </div>
 
     <footer class="footer-styling shadow-top">
       <div class="footer-text">Contact Us</div>
@@ -187,6 +208,62 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <script>
+    function openAlbumViewer(event, albumId) {
+      event.preventDefault();
+      document.getElementById(albumId).style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      jumpToSlide(albumId, 0);
+    }
+
+    function closeAlbumViewer(albumId) {
+      document.getElementById(albumId).style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Shifts slides back or forth when clicking navigation arrows
+    function shiftSlide(albumId, directionIndexShift) {
+      const modalElement = document.getElementById(albumId);
+      const totalSlidesCount = modalElement.querySelectorAll('.carousel-slide-cell').length;
+
+      // Reads current track index coordinate stored directly on parent element attribute node data tags
+      let activeSlideIndex = parseInt(modalElement.getAttribute('data-current-slide')) || 0;
+
+      activeSlideIndex += directionIndexShift;
+
+      // Creates a continuous carousel cycle loops track system bounds
+      if (activeSlideIndex >= totalSlidesCount) {
+        activeSlideIndex = 0; // Loops back to start
+      } else if (activeSlideIndex < 0) {
+        activeSlideIndex = totalSlidesCount - 1; // Loops back to end
+      }
+
+      jumpToSlide(albumId, activeSlideIndex);
+    }
+
+    function jumpToSlide(albumId, targetIndex) {
+      const modalElement = document.getElementById(albumId);
+      const train = document.getElementById('train-' + albumId);
+
+      // Updates internal current state coordinate memory properties tracking attributes node tags
+      modalElement.setAttribute('data-current-slide', targetIndex);
+
+      // Slides container side-to-side
+      train.style.transform = `translateX(-${targetIndex * 100}%)`;
+
+      // Highlights active pagination dots
+      const dots = modalElement.querySelectorAll('.dot-indicator');
+      dots.forEach((dot, index) => {
+        if (index === targetIndex) {
+          dot.classList.add('active-dot');
+        } else {
+          dot.classList.remove('active-dot');
+        }
+      });
+    }
+  </script>
+
+
 </body>
 
 </html>
