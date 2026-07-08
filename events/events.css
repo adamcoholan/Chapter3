@@ -46,14 +46,6 @@
     border-radius: 2px;
 }
 
-.text {
-    color: #333333;
-    font-size: clamp(1.15rem, 2.5vw, 1.35rem);
-    line-height: 1.65;
-    font-weight: 500;
-    max-width: 850px;
-}
-
 .calendar {
     width: 100%;
     margin-top: 3rem;

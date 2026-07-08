@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="../index.css">
-  <link rel="stylesheet" href="./membership.css">
+  <link rel="stylesheet" href="./members.css">
   <title>Chapter 3 - Southwestern Ontario</title>
 </head>
 
@@ -34,42 +34,84 @@
               <a class="nav-link" href="../gallery/gallery.html">Photo Gallery</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 About Us
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../about/airfield.html">Airfield</a></li>
-                <li><a class="dropdown-item" href="../about/members.html">Our Members</a></li>
+                <li><a class="dropdown-item" href="./airfield.html">Airfield</a></li>
+                <li><a class="dropdown-item active" href="#">Our Members</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Membership</a>
+              <a class="nav-link" href="../membership/membership.html">Membership</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="text-wrapper">
+    <div class="container my-5 card-wrapper" style="margin-top: 0 !important; max-width: 1200px;">
+
+    <div class="text-wrapper" >
       <span class="dotted-title">
         <span class="dot"></span>Chapter 3: Southwestern Ontario<span class="dot"></span>
       </span>
-      <h2 class="title">Join The Community</h2>
+      <h2 class="title">Our Members</h2>
       <span class="line"></span>
       <p class="text">
-        Take your passion for flight further. Join Chapter 3 to gain access to local meet-ups and events, competitions,
-        and a network of dedicated pilots. To join us, please fill out the following form in entirety and send it, along
-        with payment to ***ADD WHAT IS WANTED HERE***.
+        The dedicated team of pilots, builders, and aviation enthusiasts that make our community.
       </p>
     </div>
 
-    <div class="pdf-container">
-      <iframe class="pdf-iframe"
-        src="https://aerobaticscanada.org/AC/forms/Aerobatic%20Club%20of%20Canada%20Ch3%20Membership%20Form.pdf">
-        <p>Your web browser does not support embedded PDFs. Please click the download link on the left panel to fill out
-          the file.</p>
-      </iframe>
+      <div class="members-grid mb-5">
+        
+        <!-- Member 1: President -->
+        <div class="member-profile-card">
+          <div class="member-image-frame">
+            <img src="../images/leadership/president.jpg" alt="Club President Profile Photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+            <div class="member-photo-placeholder" style="display: none;"><i class="bi bi-person-square"></i></div>
+          </div>
+          <div class="member-details-block">
+            <h3 class="member-name">Test</h3>
+            <p class="member-title">Member</p>
+          </div>
+        </div>
+
+        <div class="member-profile-card">
+          <div class="member-image-frame">
+            <img src="../images/leadership/president.jpg" alt="Club President Profile Photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+            <div class="member-photo-placeholder" style="display: none;"><i class="bi bi-person-square"></i></div>
+          </div>
+          <div class="member-details-block">
+            <h3 class="member-name">Test</h3>
+            <p class="member-title">Member</p>
+          </div>
+        </div>
+
+        <div class="member-profile-card">
+          <div class="member-image-frame">
+            <img src="../images/leadership/president.jpg" alt="Club President Profile Photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+            <div class="member-photo-placeholder" style="display: none;"><i class="bi bi-person-square"></i></div>
+          </div>
+          <div class="member-details-block">
+            <h3 class="member-name">Test</h3>
+            <p class="member-title">Member</p>
+          </div>
+        </div>
+
+        <div class="member-profile-card">
+          <div class="member-image-frame">
+            <img src="../images/leadership/president.jpg" alt="Club President Profile Photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+            <div class="member-photo-placeholder" style="display: none;"><i class="bi bi-person-square"></i></div>
+          </div>
+          <div class="member-details-block">
+            <h3 class="member-name">Test</h3>
+            <p class="member-title">Member</p>
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <footer class="footer-styling shadow-top">

@@ -1,146 +1,194 @@
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+.text-wrapper {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2.6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-    h1 {
-      text-align: center;
-      margin-bottom: 40px;
-      font-weight: 400;
-    }
+.dotted-title {
+  color: #FC0101;
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
 
-    /* Album Grid Layout */
-    .album-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      max-width: 1200px;
-      margin: 0 auto;
-      margin-top: 3rem;
-    }
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #FC0101;
+  border-radius: 50%;
+}
 
-    /* Album Card */
-    .album-card {
-      background: #FFF;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-      transition: transform 0.2s ease;
-    }
+.title {
+  color: #141414;
+  font-weight: 900;
+  font-size: clamp(2.25rem, 6vw, 3.25rem);
+  letter-spacing: -0.5px;
+  margin: 0 0 1.5rem 0;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
 
-    .album-card:hover {
-      transform: translateY(-5px);
-    }
+.line {
+  width: 80px;
+  height: 4px;
+  background-color: #FC0101;
+  margin-bottom: 2rem;
+  border-radius: 2px;
+}
 
-    .album-cover {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      display: block;
-    }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    .album-info {
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
 
-    .open-btn {
-      display: inline-block;
-      background: #333;
-      color: #fff;
-      text-decoration: none;
-      padding: 8px 16px;
-      border-radius: 6px;
-      font-size: 14px;
-      transition: background 0.2s;
-    }
+/* Album Grid Layout */
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
 
-    .open-btn:hover {
-      background: #555;
-    }
+/* Album Card */
+.album-card {
+  background: #FFF;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
 
-    /* Full-Screen Modal Viewer */
-    .album-viewer {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(0, 0, 0, 0.95);
-      z-index: 1000;
+.album-card:hover {
+  transform: translateY(-5px);
+}
 
-      /* Hidden by default */
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s ease;
+.album-cover {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
 
-      /* Scroll Container Setup */
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      scroll-behavior: smooth;
-    }
+.album-info {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    /* Open Modal via CSS :target */
-    .album-viewer:target {
-      opacity: 1;
-      pointer-events: auto;
-    }
+.open-btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s;
+}
 
-    /* Individual Full-Screen Slide */
-    .slide {
-      min-width: 100vw;
-      height: 80vh;
-      scroll-snap-align: start;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
+.open-btn:hover {
+  background: #555;
+}
 
-    .slide img {
-      max-width: 90vw;
-      max-height: 85vh;
-      object-fit: contain;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    }
+/* Full-Screen Modal Viewer */
+.album-viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 1000;
 
-    /* Close Button */
-    .close-btn {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: rgba(255, 255, 255, 0.3);
-      color: #fff;
-      text-decoration: none;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 24px;
-      z-index: 1010;
-      transition: background 0.2s;
-    }
+  /* Hidden by default */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 
-    .close-btn:hover {
-      background: rgba(255, 255, 255, 0.4);
-    }
+  /* Scroll Container Setup */
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
 
-    /* Simple Slide Counter Hint */
-    .scroll-hint {
-      position: absolute;
-      bottom: 50px;
-      left: 48%;
-      transform: translateX(-50%);
-      background: rgba(255, 255, 255, 0.3);
-      padding: 6px 16px;
-      border-radius: 20px;
-      font-size: 14px;
-      letter-spacing: 1px;
-      pointer-events: none;
-    }
+/* Open Modal via CSS :target */
+.album-viewer:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Individual Full-Screen Slide */
+.slide {
+  min-width: 100vw;
+  height: 80vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slide img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Close Button */
+.close-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  text-decoration: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  z-index: 1010;
+  transition: background 0.2s;
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Simple Slide Counter Hint */
+.scroll-hint {
+  position: absolute;
+  bottom: 50px;
+  left: 48%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.3);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  pointer-events: none;
+}
