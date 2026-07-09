@@ -59,44 +59,28 @@
       <span class="line"></span>
     </div>
 
-    <!-- Content Grid Wrapper Layout -->
     <div class="card-wrapper" style="margin-top: 0rem; margin-bottom: 4rem;">
       <div class="row"
-        style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important; gap: 2rem; padding: 0 1rem;">
-
-        <!-- Redesigned Fully Clickable Album Card Target Wrapper Box -->
+        style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important; gap: 2rem; padding: 0 1rem; justify-content: center;">
         <div class="album-card layout-clickable-tile" onclick="openAlbumViewer(event, 'album1')">
           <div class="album-cover-frame">
-            <img src="../images/formation.jpg" alt="Nature Album Cover" class="album-cover">
+            <img src="../images/chapter3-pictures/3.jpg" class="album-cover">
           </div>
           <div class="album-info-block">
             <div>
-              <h3>Nature Collection</h3>
-              <p>Recent landscape and flight tracking imagery records.</p>
+              <h3>Chapter 3 Pictures</h3>
             </div>
-            <div class="open-btn-fallback">
-              <span>View Album</span>
-              <i class="bi bi-arrow-right-short"></i>
-            </div>
+            <div class="open-btn-fallback">View Album</div>
           </div>
         </div>
-
       </div>
     </div>
 
-    <!-- Re-architected Interactive Carousel Slider Modal with Scroll Arrows -->
     <div id="album1" class="album-viewer-modal" data-current-slide="0">
       <div class="modal-backdrop-shield" onclick="closeAlbumViewer('album1')"></div>
-
       <div class="carousel-container-box">
-        <!-- Clean Structural Escape Toggle Icon Element -->
         <a href="#" class="close-modal-x" onclick="closeAlbumViewer('album1')">&times;</a>
-
-        <!-- Core Interactive Stage: Houses Arrows and Image Train Carousel Frame -->
         <div class="carousel-stage-row">
-
-          <!-- Left Navigation Arrow Button Trigger (Bootstrap Vector Icon) -->
-          <!-- Left Arrow -->
           <button class="stage-nav-arrow arrow-left-trigger" onclick="shiftSlide('album1', -1)"
             aria-label="Previous photo">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -107,42 +91,193 @@
                 d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
             </svg>
           </button>
-
-          <!-- Right Arrow -->
-
-
-          <!-- Slider Frame Train Tracking Viewport Wrapper -->
           <div class="carousel-viewport-window">
             <div class="carousel-slide-train" id="train-album1">
-
-              <!-- Slide Node Item 1 -->
               <div class="carousel-slide-cell">
                 <div class="slide-photo-frame">
-                  <img src="../images/formation.jpg" alt="Nature Image 1">
+                  <img src="../images/chapter3-pictures/1.jpg">
                 </div>
-                <div class="scroll-hint-badge">1 / 3</div>
+                <div class="scroll-hint-badge">1 / 30</div>
               </div>
-
-              <!-- Slide Node Item 2 -->
               <div class="carousel-slide-cell">
                 <div class="slide-photo-frame">
-                  <img src="../images/formation.jpg" alt="Nature Image 2">
+                  <img src="../images/chapter3-pictures/2.jpg">
                 </div>
-                <div class="scroll-hint-badge">2 / 3</div>
+                <div class="scroll-hint-badge">2 / 30</div>
               </div>
-
-              <!-- Slide Node Item 3 -->
               <div class="carousel-slide-cell">
                 <div class="slide-photo-frame">
-                  <img src="../images/formation.jpg" alt="Nature Image 3">
+                  <img src="../images/chapter3-pictures/3.jpg">
                 </div>
-                <div class="scroll-hint-badge">3 / 3</div>
+                <div class="scroll-hint-badge">3 / 30</div>
               </div>
-
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/4.jpg">
+                </div>
+                <div class="scroll-hint-badge">4 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/5.jpg">
+                </div>
+                <div class="scroll-hint-badge">5 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/6.JPG">
+                </div>
+                <div class="scroll-hint-badge">6 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/7.jpg">
+                </div>
+                <div class="scroll-hint-badge">7 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/8.jpg">
+                </div>
+                <div class="scroll-hint-badge">8 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/9.jpg">
+                </div>
+                <div class="scroll-hint-badge">9 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/10.jpg">
+                </div>
+                <div class="scroll-hint-badge">10 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/11.jpg">
+                </div>
+                <div class="scroll-hint-badge">11 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/12.jpg">
+                </div>
+                <div class="scroll-hint-badge">12 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <video width="640" height="360" controls>
+                    <source src="../images/chapter3-pictures/13.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div class="scroll-hint-badge">13 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/14.jpg">
+                </div>
+                <div class="scroll-hint-badge">14 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/15.jpg">
+                </div>
+                <div class="scroll-hint-badge">15 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/16.jpg">
+                </div>
+                <div class="scroll-hint-badge">16 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/17.jpg">
+                </div>
+                <div class="scroll-hint-badge">17 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/18.jpg">
+                </div>
+                <div class="scroll-hint-badge">18 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/19.jpg">
+                </div>
+                <div class="scroll-hint-badge">19 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/20.jpg">
+                </div>
+                <div class="scroll-hint-badge">20 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/21.jpg">
+                </div>
+                <div class="scroll-hint-badge">21 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/22.jpg">
+                </div>
+                <div class="scroll-hint-badge">22 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/23.jpg">
+                </div>
+                <div class="scroll-hint-badge">23 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/26.jpg">
+                </div>
+                <div class="scroll-hint-badge">24 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/27.jpg">
+                </div>
+                <div class="scroll-hint-badge">25 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/30.jpg">
+                </div>
+                <div class="scroll-hint-badge">26 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/31.jpg">
+                </div>
+                <div class="scroll-hint-badge">27 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/32.jpg">
+                </div>
+                <div class="scroll-hint-badge">28 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/33.jpg">
+                </div>
+                <div class="scroll-hint-badge">29 / 30</div>
+              </div>
+              <div class="carousel-slide-cell">
+                <div class="slide-photo-frame">
+                  <img src="../images/chapter3-pictures/34.jpg">
+                </div>
+                <div class="scroll-hint-badge">30 / 30</div>
+              </div>
             </div>
           </div>
-
-          <!-- Right Navigation Arrow Button Trigger (Bootstrap Vector Icon) -->
           <button class="stage-nav-arrow arrow-right-trigger" style="text-align: center;"
             onclick="shiftSlide('album1', 1)" aria-label="Next photo">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -153,14 +288,39 @@
                 d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708" />
             </svg>
           </button>
-
         </div>
 
-        <!-- Floating Circle Nav Bullet Indicators -->
         <div class="carousel-pagination-dots">
           <button class="dot-indicator active-dot" onclick="jumpToSlide('album1', 0)"></button>
           <button class="dot-indicator" onclick="jumpToSlide('album1', 1)"></button>
           <button class="dot-indicator" onclick="jumpToSlide('album1', 2)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 3)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 4)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 5)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 6)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 7)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 8)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 9)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 10)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 11)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 12)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 13)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 14)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 15)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 16)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 17)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 18)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 19)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 20)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 21)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 22)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 23)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 24)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 25)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 26)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 27)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 28)"></button>
+          <button class="dot-indicator" onclick="jumpToSlide('album1', 29)"></button>
         </div>
       </div>
     </div>
@@ -221,21 +381,18 @@
       document.body.style.overflow = 'auto';
     }
 
-    // Shifts slides back or forth when clicking navigation arrows
     function shiftSlide(albumId, directionIndexShift) {
       const modalElement = document.getElementById(albumId);
       const totalSlidesCount = modalElement.querySelectorAll('.carousel-slide-cell').length;
 
-      // Reads current track index coordinate stored directly on parent element attribute node data tags
       let activeSlideIndex = parseInt(modalElement.getAttribute('data-current-slide')) || 0;
 
       activeSlideIndex += directionIndexShift;
 
-      // Creates a continuous carousel cycle loops track system bounds
       if (activeSlideIndex >= totalSlidesCount) {
-        activeSlideIndex = 0; // Loops back to start
+        activeSlideIndex = 0;
       } else if (activeSlideIndex < 0) {
-        activeSlideIndex = totalSlidesCount - 1; // Loops back to end
+        activeSlideIndex = totalSlidesCount - 1;
       }
 
       jumpToSlide(albumId, activeSlideIndex);
@@ -245,13 +402,10 @@
       const modalElement = document.getElementById(albumId);
       const train = document.getElementById('train-' + albumId);
 
-      // Updates internal current state coordinate memory properties tracking attributes node tags
       modalElement.setAttribute('data-current-slide', targetIndex);
 
-      // Slides container side-to-side
       train.style.transform = `translateX(-${targetIndex * 100}%)`;
 
-      // Highlights active pagination dots
       const dots = modalElement.querySelectorAll('.dot-indicator');
       dots.forEach((dot, index) => {
         if (index === targetIndex) {

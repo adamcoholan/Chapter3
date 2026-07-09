@@ -46,6 +46,10 @@
   border-radius: 2px;
 }
 
+.album-card {
+  max-width: 500px;
+}
+
 .album-card.layout-clickable-tile {
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -345,5 +349,12 @@
 
   .slide-photo-frame {
     height: 42vh;
+  }
+}
+
+@media (max-width: 590px) {
+  .dot-indicator {
+    width: 4px;
+    height: 4px;
   }
 }
