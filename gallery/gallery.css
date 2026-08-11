@@ -46,6 +46,10 @@
   border-radius: 2px;
 }
 
+.email-link {
+  color: #141414;
+}
+
 .album-card {
   max-width: 500px;
 }
